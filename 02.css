@@ -1,0 +1,422 @@
+
+ul, nav, body, h1, h2, h4, h6, p, figure {
+  margin: 0;
+  padding: 0;
+}
+
+a, button { transition: all 0.3s ease; }
+
+/* Bootstrap grid system  */
+
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+ 
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tm-container-inner,
+.tm-container-inner-2 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col-lg-3,
+.col-lg-4,
+.col-lg-6,
+.col-md-4,
+.col-md-6,
+.col-sm-6, 
+.col-12 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  
+  .col-lg-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  
+  .col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/*
+  primary: #2D99CC
+  success: #319966
+  danger: #993332
+*/
+
+.tm-btn {
+  display: inline-block;
+  font-size: 1rem;
+  width: auto;
+  padding: 10px 30px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+}
+
+.tm-btn-default {
+  border: 1px solid #000000;
+  background-color: transparent;
+  color: #626364;
+}
+
+.tm-btn-default:hover,
+.tm-btn-default:focus {
+  color: rgb(0, 0, 0);
+  background-color: #98999A;
+}
+
+.tm-btn-primary {
+  background-color: #2D99CC;
+  color: rgb(0, 0, 0);
+}
+
+.tm-btn-primary:hover,
+.tm-btn-primary:focus {
+  background-color: #1b6f96;
+}
+
+.tm-btn-success {
+  background-color: #319966;
+  color: rgb(0, 0, 0);
+}
+
+.tm-btn-success:hover,
+.tm-btn-success:focus {
+  background-color: #1d6e46;
+}
+
+.tm-btn-danger {
+  background-color: #993332;
+  color: rgb(0, 0, 0);
+}
+
+.tm-btn-danger:hover,
+.tm-btn-danger:focus {
+  background-color: #752423;
+}
+
+.tm-mb-45 {
+  margin-bottom: 45px;
+}
+
+.tm-mb-p {
+    margin-bottom: 20px;
+}
+
+.tm-text-success {
+  color: #000000;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 17px;
+  background-color: #000000;
+  overflow-x: hidden;
+}
+
+.container {
+  background-color: white;
+}
+
+p, address {
+  color: #626364;
+  line-height: 1.8;
+}
+
+/* Set width and height in JS */
+.placeholder {
+  width: 100%;
+  min-height: 460px;
+  
+}
+
+.placeholder-2 {
+  width: 100%;
+  min-height: 220px;
+  background-color: #CFBEA5;
+  position: relative;
+  z-index: 998;
+}
+
+.parallax-window {
+  min-height: 460px;
+  background: transparent;
+  position: relative;
+}
+
+.parallax-window-2 {
+  min-height: 220px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+  position: relative;
+}
+
+.parallax-mirror {
+  z-index: 999 !important;
+}
+
+.tm-header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  z-index: 1000;
+}
+
+.tm-header-inner {
+  padding: 40px 50px;
+}
+
+@media (max-width: 991px) {
+  .tm-header-inner {
+    padding: 30px 15px;
+  }
+}
+
+.tm-site-logo {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.tm-site-text-box {
+  display: inline-block;
+}
+
+.tm-site-title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.tm-site-description {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.tm-nav {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.tm-nav-ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tm-nav-li {
+  list-style: none;
+  display: block;
+  margin-bottom: 0;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+@media (max-width: 200px) {
+  .tm-nav-li {
+    padding-right: 100px;
+    padding-left: 200px;
+  }
+}
+
+.tm-nav-link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding-bottom: 100px;
+}
+
+
+
+
+
+
+*{
+  font-family: 'Poppins',sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+.container{
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+
+.container .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+  gap: 15px;
+}
+.container .box-container .box{
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  border-radius: 5px;
+  text-align:  center;
+  padding: 30px 2px;
+}
+.container .box-container .box img{
+  padding: 10px;/*ปรับขนาดภาพ*/
+  height: 220px;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  object-fit: contain;
+}
+.container .box-container .box h3{
+  color: #444;
+  font-size: 22px;
+  padding:10px 0;
+}
+.container .box-container .box p{
+  color: #777;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.container .box-container .box .dtn{
+  margin-top: 10px;
+  display:  inline-block;
+  background: #333;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 8px 25px;
+
+}
+.container .box-container .box .dtn:hover{
+  letter-spacing: 1px;
+}
+.container .box-container .box .dtn:hover{
+box-shadow: 0 10px 15px rgba(0,0,0,.3);
+transform: scale(1.03);
+}
+@media(max-width:768px){
+  .container{
+    padding: 20px;
+  }
+}
+
+
+
+
+
+.pagination{
+  display:flex;
+  justify-content: center;
+}
+/* Pagination links */
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+ 
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+ 
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+
+
+.tm-footer {
+  
+  padding: 25px 15px;
+  margin-top: 40px;
+}
+
+.tm-footer a {
+  color: #626364;
+  text-decoration: none;
+}
+
+.tm-footer a:hover {
+  color: #1A6692;
+}
+
